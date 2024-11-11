@@ -5,7 +5,7 @@ import nacl from "tweetnacl";
 const keypair = Keypair.generate();
 
 // Extract the public and private keys
-const publicKey = keypair.publicKey.toString();
+const publicKey = keypair.publicKey.toBase58();
 const secretKey = keypair.secretKey;
 
 // Display the keys
